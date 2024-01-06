@@ -1,8 +1,8 @@
-# Pull base image 
-From httpd:latest 
+# pull the tomcat docker image from docker hub
+FROM tomcat:latest
 
-# Maintainer name 
-MAINTAINER "kmmang632@gmail.com" 
+# person who is maintinag the docker file
+MAINTAINER "vnom1985@gmail.com"
 
-# copying the the  waebapp war file from the source directory to destincation tomcat Container directory
-COPY ./honey-html/ /usr/local/apache2/htdocs/
+# copying the the helloworld target war package from the target to destincation tomcat Container directory
+COPY ./target/helloworld-1.1-SNAPSHOT.war /usr/local/tomcat/webapps/
