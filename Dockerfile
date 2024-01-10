@@ -1,8 +1,8 @@
-# pull the tomcat docker image from docker hub
-FROM tomcat:latest
+# Pull base image 
+From httpd:latest 
 
-# person who is maintinag the docker file
-MAINTAINER "kmmang632@gmail.cam"
+# Maintainer name 
+MAINTAINER "kmmang632@gmail.com" 
 
-# copying the the helloworld target war package from the target to destincation tomcat Container directory
-COPY ./target/helloworld-1.1-SNAPSHOT.war /usr/local/tomcat/webapps/
+# copying the the  waebapp war file from the source directory to destincation tomcat Container directory
+COPY ./Grandcoffee Free Website Template/ /usr/local/apache2/htdocs/
